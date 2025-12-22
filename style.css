@@ -1,0 +1,54 @@
+:root{
+    --primary-color : #FAF3E1;
+    --secondary-color:#FF6D1F;
+    --third-color:#F5E7C6;
+    --fourth-color:#222222;
+}
+@font-face {
+    font-family: Aeonika;
+    src: url(./Font-holder/Aeonika-BF66fcc5a8cc5db.otf);
+    
+}
+@font-face {
+   font-family: Aeonik;
+   font-weight: 200;
+    src:url(./Font-holder/fonnts.com-Aeonik-Regular.ttf);
+}
+@font-face {
+    font-family: Aeonik;
+    font-weight: 500;
+    src: url(./Font-holder/fonnts.com-Aeonik-Bold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html,body {
+height: 100%;
+width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--third-color);
+   
+}
+h1{
+    font-family: Aeonik;
+    font-weight: 500;
+}
+nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+section.allElem{
+    height: 100%;
+    width: 100%;
+    background-color: var(--fourth-color);
+    padding:40px;
+    padding-top: 80px;
+}
