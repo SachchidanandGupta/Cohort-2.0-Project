@@ -23,7 +23,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--primary-color);
+    font-family: Aeonik;
+   
+    
 }
 html,body {
 height: 100%;
@@ -33,12 +36,9 @@ main{
     height: 100%;
     width: 100%;
     background-color: var(--third-color);
-   
+     
 }
-h1{
-    font-family: Aeonik;
-    font-weight: 500;
-}
+
 nav{
     position: fixed;
     height: 60px;
@@ -48,7 +48,33 @@ nav{
 section.allElem{
     height: 100%;
     width: 100%;
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
     padding:40px;
     padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+}
+.elem{
+    background-color: var(--secondary-color);
+    height: 400px;
+    width: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.2s;
+}
+.elem h2{
+       position: absolute;
+       bottom: 5%;
+       right: 5%;
+}
+.elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.elem:active{
+    scale: 0.97;
 }
